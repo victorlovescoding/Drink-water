@@ -1,0 +1,284 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2785E2;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+}
+h2{
+    width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin: .6rem auto;
+}
+#waterContainer{
+    width: 10vw;
+    height: 60vh;
+    margin: 1rem auto;
+    border: 3px solid #074AC8;
+    border-radius: 0 0 180px 180px;
+    /* background: linear-gradient(to top, blue 20% ); */
+}
+#waterContainer #ml{
+    font-size: 1.5rem;
+}
+#addWaterButton{
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    width: 7vw;
+    height: 45vh;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    word-spacing: 40px;
+    border-radius: 0 0 150px 150px;
+}
+#addWaterButton:hover{
+    background-color: #5AA6F8;
+    color: #ffffff;
+}
+
+#target{
+    width: 10vw;
+    text-align: center;
+}
+
+#progressContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#progress{
+    margin: 0 .5rem;
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+#progressContainer #ml{
+    margin-bottom: 0px;
+}
+
+#calcContainer{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+#calcContainer p{
+    margin: 0 .7rem;
+    font-size: 2.5rem;
+}
+#calcContainer input{
+    display: block;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#needWater{
+    font-weight: bolder;
+}
+
+
+
+#targetContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+#targetContainer #goalPercent{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+    color:#0C4EB4;
+}
+#target{
+    display: block;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+}
+#changeBottle{
+    display: block;
+    margin: 1rem auto;
+    padding: .2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#changeBottle:hover{
+    background-color: #5AA6F8;
+    color: #ffffff;
+}
+#percent{
+    color:#ffffff
+}
+#ml{
+    color: #ffffff;
+}
+@media (min-width: 681px) and (max-width: 1200px) {
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    h2{
+        color: #ffffff;
+        text-align: center;
+        margin-top: .5rem;
+    }
+    #calcContainer p{
+        font-size: 1.3rem;
+    }
+    #waterContainer{
+        width: 25vw;
+        height: 40vh;
+        margin: .5rem auto;
+        border: 3px solid #074AC8;
+        border-radius: 0 0 180px 180px;
+        /* background: linear-gradient(to top, blue 20% ); */
+    }
+    #target{
+        font-size: 1.3rem;
+        margin: .3rem auto;
+        width: 50%;
+        height: 5vh;
+        text-align: center;
+    }
+    #progressContainer{
+        padding: 5rem;
+    }
+    #progress{
+        font-size: 1.5rem;
+    }
+    #addWaterButton{
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: block;
+        margin: .3rem auto;
+        width: 10vw;
+        height: 15vh;
+        border-radius: 20px;
+        word-spacing: 40px;
+        border-radius: 0 0 150px 150px;
+    }
+    #changeBottle{
+        margin: .5rem auto;
+        padding: .2rem;
+    }
+}
+@media screen and (min-width:480px)and (max-width: 680px){
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    h2{
+        color: #ffffff;
+        text-align: center;
+        margin-top: .5rem;
+    }
+    #calcContainer p{
+        font-size: 1.3rem;
+    }
+    #waterContainer{
+        width: 45vw;
+        height: 45vh;
+        margin: auto;
+        border: 3px solid #074AC8;
+        border-radius: 0 0 180px 180px;
+        /* background: linear-gradient(to top, blue 20% ); */
+    }
+    #target{
+        font-size: 1rem;
+        margin: .5rem auto;
+        width: 50vw;
+        height: 5vh;
+        text-align: center;
+    }
+    #progressContainer{
+        padding: 5rem;
+    }
+    #progress{
+        font-size: 1.5rem;
+    }
+    #addWaterButton{
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        margin: .3rem auto;
+        width: 17vw;
+        height: 15vh;
+        border-radius: 20px;
+        word-spacing: 40px;
+        border-radius: 0 0 150px 150px;
+    }
+    #changeBottle{
+        margin: .5rem auto;
+        padding: .2rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    h2{
+        color: #ffffff;
+        text-align: center;
+        margin-top: .5rem;
+    }
+    #calcContainer p{
+        font-size: 1.3rem;
+    }
+    #waterContainer{
+        width: 40vw;
+        min-height: 30vh;
+        margin: auto;
+        border: 3px solid #074AC8;
+        border-radius: 0 0 180px 180px;
+        /* background: linear-gradient(to top, blue 20% ); */
+    }
+    #target{
+        font-size: 1rem;
+        margin: .5rem auto;
+        width: 50vw;
+        height: 5vh;
+        text-align: center;
+    }
+    #progress{
+        font-size: 1.5rem;
+    }
+    #addWaterButton{
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        margin: .3rem auto;
+        width: 17vw;
+        min-height: 15vh;
+        border-radius: 20px;
+        word-spacing: 40px;
+        border-radius: 0 0 150px 150px;
+    }
+    #changeBottle{
+        margin: .5rem auto;
+        padding: .2rem;
+    }
+}

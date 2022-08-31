@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drink Water app</title>
+</head>
+<body>
+    
+    <h1>Drink Water</h1>
+    <h2>How Much Water You Should Drink A Day :</h2>
+    <div id="calcContainer">
+        <p id="needWater"></p>
+        <p id="ml">ml</p>
+        <p id="qual">=</p>
+        <input type="text" id="kg" maxlength="3">
+        <p id="unit">kg</p>
+        <p>X</p>
+        <p>35 /day</p>
+    </div>
+    <div id="waterContainer">
+        <div id="progressContainer">
+            <h3 id="progress"></h3>
+            <p id="ml">ml</p>
+        </div>
+        <div id="targetContainer">
+            <p id="goalPercent"></p>
+            <p id="percent">%</p>
+        </div>
+    </div>
+    
+    <!-- <input type="number" id="target" placeholder="goal ml"> -->
+<input id="target" type="number" placeholder="goal ml">
+<button id="addWaterButton" type="button">+  ml</button>
+<button id="changeBottle" type="button">change ml</button>
+<script src="script.js"></script>    
+</body>
+</html>
